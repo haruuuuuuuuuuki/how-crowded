@@ -86,7 +86,7 @@ cv2.destroyAllWindows()
 ```
 import cv2
 
-video = cv2.VideoCapture("car-detection.mp4")
+video = cv2.VideoCapture("sample.mp4")
 subtractor = cv2.createBackgroundSubtractorMOG2()
 
 while True:
@@ -118,6 +118,8 @@ cv2.destroyAllWindows()
 
 ### **Challenge: Track Multiple Objects**
 
+You will notice in the above examples that the tracking we have done is messy. The boxes don't usually fit cleanly to the objects and we lose track of objects if they stop moving, or if there is other movement in the video.
+
 For your challenge, find or record a short video that contains multiple moving objects (e.g., cars on a street, people walking, or toys rolling).
 Modify your code so it can track several objects at once using bounding boxes.
 
@@ -126,6 +128,7 @@ Modify your code so it can track several objects at once using bounding boxes.
 * Tune the area threshold to avoid detecting noise.
 * Try using color filters or edge detection to separate overlapping objects.
 * Consider using `cv2.putText` to label each tracked object.
+* You may use this guide and code to refine your own work: https://pysource.com/2021/10/05/object-tracking-from-scratch-opencv-and-python/
 
 **Optional extension:**
 Try saving your tracked video:
