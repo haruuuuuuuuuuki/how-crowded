@@ -141,6 +141,8 @@ output = cv2.VideoWriter('output.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 20, (wid
 
 ### **Turn In**
 
+Upload all to this repository:
+* Your Code
 * One screenshot or saved video showing your tracking results for the *task*.
 * One video of your *challenge* with multiple tracked objects.
 * A short reflection (3–5 sentences) describing how you improved your tracking accuracy.
